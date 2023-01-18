@@ -4,5 +4,6 @@ def add(num):
 for num in range(0, 100):
     if num > 0:
         print(", ", end="")
-    print(add(num), end="")
+#    print(add(num), end="")
+    print("{}".format(add(num)), end="")
 
