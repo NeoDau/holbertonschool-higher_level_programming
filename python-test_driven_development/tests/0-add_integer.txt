@@ -1,16 +1,23 @@
 """
 Simple Test
 """
-def add_integer(a, b):
+function: def add_integer(a, b):
+
 >>> print(add_integer(1, 2))
 3
->>> print(add_integer(100, -2))
-98
 >>> print(add_integer(2))
 100
 >>> print(add_integer(100.3, -2))
 98
->>> print(add_integer(4, "School"))
+>>> print(1/2)
+98
+>>> print(1^2)
+101
+>>> print(-100)
+2
+>>> print(add_integer(4, "nashe"))
 b must be an integer
 >>> print(add_integer(None))
 a must be an integer
+...
+ValueError: can notconvert float to integer
