@@ -9,11 +9,11 @@ function: def add_integer(a, b):
 100
 >>> print(add_integer(100.3, -2))
 98
->>> print(1/2)
+>>> print(add_integer(1/2))
 98
->>> print(1^2)
+>>> print(add_integer(1^2))
 101
->>> print(-100)
+>>> print(add_integer(-100))
 2
 >>> print(add_integer(4, "nashe"))
 b must be an integer
