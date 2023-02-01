@@ -33,13 +33,13 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if type(value[0]) == int or type(value[1]) == int:
+        if type(value[0]) is not int or type(value[1]) is not int:
             raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        self__position = value
+        self.__size = value
 
     def area(self):
         """returns areas"""
@@ -52,12 +52,12 @@ class Square:
             print()
         else:
             for x in range(self.__position[1]):
-                print("")
-            for a in range(self.__size):
+                print()
+            for i in range(self.__size):
                 for space in range(self.__position[0]):
                     print(" ", end="")
-                for i in range(self.__size):
-                    print('#', end="")
-                if a+1 < self.__size:
-                    print("")
-            print("")
+                for a in range(self.__size):
+                    print("#", end="")
+                if i+1 < self.__size:
+                    print()
+            print()
