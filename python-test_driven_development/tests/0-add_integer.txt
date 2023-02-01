@@ -1,7 +1,12 @@
-"""
+"""""""""""
 Simple Test
-"""
-function: def add_integer(a, b):
+"""""""""""
+______________________
+using: ``add_integer``
+______________________
+``add_integer`` from the ``0-add_integer`` module:
+>>> add_integer = __import__("add_integer").add_integer
+
 
 >>> print(add_integer(1, 2))
 3
