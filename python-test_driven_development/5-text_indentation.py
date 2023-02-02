@@ -6,7 +6,6 @@ def text_indentation(text):
     """Print Characters - "." "?" ":" """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    
     characters = 0
     for char in range(len(text)):
         if text[char] == "." or text[char] == "?" or text[char] == ":":
