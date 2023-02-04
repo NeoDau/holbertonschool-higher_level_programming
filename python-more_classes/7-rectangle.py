@@ -28,7 +28,7 @@ class Rectangle:
             return ""
         for x in range(self.__height):
             for i in range(self.__width):
-                printHa += "#"
+                printHa += str(self.print_symbol)
             printHa += "\n"
         return printHa[:-1]
 
