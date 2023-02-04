@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    
+    """ Declaranding Class"""
     pass
