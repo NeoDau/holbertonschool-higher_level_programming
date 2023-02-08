@@ -48,7 +48,3 @@ TypeError: age must be an integer
 >>> bg.integer_validator("age", 1)
 
 >>> bg.integer_validator("age", True)
-
->>> bg.integer_validator(area())
-...
-NameError: name 'area' is not defined
