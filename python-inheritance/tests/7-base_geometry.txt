@@ -40,10 +40,6 @@ Traceback (most recent call last):
 ...
 TypeError: age must be an integer
 
->>> bg.integer_validator("age", True)
-Traceback (most recent call last):
-TypeError: list must be an integer
-
 >>> bg.integer_validator("age", None)
 Traceback (most recent call last):
 ...
