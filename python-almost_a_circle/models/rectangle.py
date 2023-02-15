@@ -82,3 +82,9 @@ class Rectangle(Base):
         h = self.__height
         w = self.__width
         return (f"[Rectangle] ({self.id}) {x}/{y} - {w}/{h}")
+
+    def update(self, *args):
+        names = ("id", "width", "height", "x", "y")
+        if args:
+            for key, value in zip(names):
+                setattr(self, key, value)
