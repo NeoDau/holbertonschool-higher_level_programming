@@ -85,5 +85,7 @@ class Rectangle(Base):
 
     def update(self, *args):
         """function update"""
-        for key, value in args:
+        names = ("id", "width", "height", "x", "y")
+
+        for key, value in zip(names, args):
             setattr(self, key, value)
