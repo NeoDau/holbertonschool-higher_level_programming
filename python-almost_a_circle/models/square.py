@@ -17,9 +17,11 @@ class Square(Rectangle):
         return self.height
 
 
+    @size.setter
     def size(self, value):
         self.height = value
         self.width = value
 
     def area(self):
+        """function area"""
         return self.size * self.size
