@@ -28,7 +28,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """function update"""
-        names = ("id", "width", "height", "x", "y")
+        names = ("id", "size", "x", "y")
 
         if args:
             for key, value in zip(names, args):
