@@ -7,7 +7,7 @@ class Square(Rectangle):
     """class saquare"""
     def __init__(self, size, x=0, y=0, id=None):
         """init new instance"""
-        super().__init__(size, size, id, x, y)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """str init"""
