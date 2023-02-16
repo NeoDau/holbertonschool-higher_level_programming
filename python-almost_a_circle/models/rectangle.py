@@ -97,9 +97,10 @@ class Rectangle(Base):
     def to_dictionary(self):
         """dict f*!k"""
         x = self.x
-        y =self.y
-        __id = self.id
+        y = self.y
+        _id = self.id
         height = self.height
         width = self.width
 
-        newDict = {"x": x, "y": y, "id": __id, "height": height, "width": width}
+        newDict = {"x": x, "y": y, "id": _id, "height": height, "width": width}
+        return newDict
