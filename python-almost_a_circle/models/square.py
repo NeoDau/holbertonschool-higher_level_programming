@@ -38,12 +38,12 @@ class Square(Rectangle):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-        """dic."""
+        """dictionary of square"""
         x = self.x
         y = self.y
         __id = self.id
         size = self.width
 
-        newDict = {"id": __id, "x": x, "size": size, "y": y,}
+        newDict = {"id": __id, "x": x, "size": size, "y": y}
 
         return newDict
