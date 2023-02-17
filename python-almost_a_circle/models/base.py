@@ -33,3 +33,10 @@ class Base:
                 tp.append(x.to_dictionary())
         with open(sv, "w") as f:
             f.write(Base.to_json_string(tp))
+
+    def from_json_string(json_string):
+        """function rts list of the json str"""
+        if json_string is None or json_string == "[]":
+            return "[]"
+        else:
+            return json.loads(json_string)
