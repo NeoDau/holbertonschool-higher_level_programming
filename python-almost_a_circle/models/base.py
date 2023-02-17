@@ -41,7 +41,7 @@ class Base:
         else:
             return json.loads(json_string)
 
-    @classmethod 
+    @classmethod
     def create(cls, **dictionary):
         """function return set already"""
         if cls.__name__ == "Rectangle":
@@ -49,5 +49,4 @@ class Base:
         if cls.__name__ == "Square":
             x = cls(1)
         x.update(**dictionary)
-        return x
-        
+        return x 
