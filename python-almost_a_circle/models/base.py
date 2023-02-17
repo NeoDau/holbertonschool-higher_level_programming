@@ -40,3 +40,14 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod 
+    def create(cls, **dictionary):
+        """function return set already"""
+        if cls.__name__ == "Rectangle":
+            x = cls(1, 1)
+        if cls.__name__ == "Square":
+            x = cls(1)
+        x.update(**dictionary)
+        return x
+        
