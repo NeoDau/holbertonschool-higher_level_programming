@@ -49,4 +49,4 @@ class Base:
         if cls.__name__ == "Square":
             x = cls(1)
         x.update(**dictionary)
-        return x 
+        return x
