@@ -50,3 +50,17 @@ class Base:
             x = cls(1)
         x.update(**dictionary)
         return x
+
+    @classmethod
+    def load_from_file(cls):
+        """function return list"""
+        filname = cls.__name__ + ".json"
+        ls = []
+        try:
+            with open(filename, "r") as f:
+                jstr = cls.from_json_string(f.read())
+                for x in jstr:
+                    list.append(cls.create(**x))
+        except:
+            pass
+        return ls
