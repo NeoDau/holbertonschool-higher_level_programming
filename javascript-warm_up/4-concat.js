@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-const [primer_palabra] = process.argv.slice(2);
-const [segunda_palabra] = process.argv.slice(3);
+const [primerPalabra] = process.argv.slice(2);
+const [segundaPalabra] = process.argv.slice(3);
 
-if (primer_palabra + segunda_palabra) {
-  console.log(primer_palabra + ' is ' + segunda_palabra);
+if (primerPalabra + segundaPalabra) {
+  console.log(primerPalabra + ' is ' + segundaPalabra);
 } else {
   console.log('undefined is undefined');
 }
