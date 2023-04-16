@@ -2,21 +2,19 @@
 
 class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
-     			return ('Rectangle ' + {});
-    		} else {
+    if (w <= 0 || h <= 0) {
+     	return;
+    } else {
       this.width = w;
       this.height = h;
     }
   }
   print () {
-    for (let x = 0; x < this.height; x++) {
-      let fila;
-      for (let i = 0; i < this.width; i++) {
-        fila += 'X';
-      }
-      console.log(fila);
-    }
-  }
+  	if (this.width && this.height) {
+		for (let i = 0; i < this.height; i++) {
+      			console.log("X".repeat(this.width));
+    			}
+  		}
+	}
 }
 module.exports = (Rectangle);
