@@ -13,7 +13,7 @@ request(url, (error, response, body) => {
   }
 
   if (response.statusCode !== 200) {
-    console.error(`Unexpected response: ${response.statusCode}`);
+    console.error(`${response.statusCode}`);
     return;
   }
 
@@ -23,6 +23,6 @@ request(url, (error, response, body) => {
       return;
     }
 
-    console.log(`Successfully wrote file to ${filePath}`);
+    console.log(`${filePath}`);
   });
 });
