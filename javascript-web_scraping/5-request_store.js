@@ -3,26 +3,12 @@
 const request = require('request');
 const fs = require('fs');
 
-const url = process.argv[2];
-const filePath = process.argv[3];
+const URL = process.argv[2];
+const FILE = process.argv[3];
 
-request(url, (error, response, body) => {
-  if (error) {
-    console.error(error);
-    return;
-  }
-
-  if (response.statusCode !== 200) {
-    console.error(`${response.statusCode}`);
-    return;
-  }
-
-  fs.writeFile(filePath, body, 'utf8', error => {
-    if (error) {
-      console.error(error);
-      return;
-    }
-
-    console.log(`${filePath}`);
-  });
-});
+function requestStore (err, resp, body) {
+	if (err == null) {
+		fs.writeFileSync(FILE, body);
+	}
+}
+request(URL, requestStore);
