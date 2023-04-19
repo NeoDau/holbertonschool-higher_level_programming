@@ -2,11 +2,13 @@
 
 const fs = require('fs');
 
-const filePath = './my_file.txt';
-const content = 'Python is cool';
+const filePath = process.argv[2];
+const content = process.argv[3];
 
-fs.writeFile(filePath, content, 'utf-8', (err) => {
+function error (err) {
   if (err) {
-    console.error(err);
+    console.log(err);
   }
-});
+}
+
+fs.writeFile(filePath, content, 'utf-8', error);
